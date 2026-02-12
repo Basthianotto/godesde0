@@ -14,4 +14,6 @@ func main() {
 
 	numeroInt, numeroString = ejercicios.DevuelveValores("101")
 	fmt.Println(strconv.Itoa(numeroInt) + " " + numeroString)
+
+	ejercicios.TablaMultiplicacion()
 }
