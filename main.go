@@ -1,7 +1,8 @@
 package main
 
 import (
-	"gitbhub.com/basthianotto/godesde0/mapas"
+	"gitbhub.com/basthianotto/godesde0/ejer_interfaces"
+	"gitbhub.com/basthianotto/godesde0/modelos"
 )
 
 func main() {
@@ -18,5 +19,10 @@ func main() {
 	//funciones.Calculos()
 	//funciones.LlamarClousure()
 	//arreglos_slices.MuestroSlice()
-	mapas.MostrarMapas()
+	//mapas.MostrarMapas()
+	//users.AltaUsuario()
+	Pedro := new(modelos.Hombre)
+	Julia := new(modelos.Mujer)
+	ejer_interfaces.HumanosRespirando(Pedro)
+	ejer_interfaces.HumanosRespirando(Julia)
 }
