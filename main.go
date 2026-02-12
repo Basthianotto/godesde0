@@ -1,6 +1,8 @@
 package main
 
-import "gitbhub.com/basthianotto/godesde0/files"
+import (
+	"gitbhub.com/basthianotto/godesde0/arreglos_slices"
+)
 
 func main() {
 	/*
@@ -12,6 +14,8 @@ func main() {
 
 		ejercicios.TablaMultiplicacion()*/
 	//files.SumaTabla()
-	files.LeoArchivo()
-
+	//files.LeoArchivo()
+	//funciones.Calculos()
+	//funciones.LlamarClousure()
+	arreglos_slices.MuestroSlice()
 }
