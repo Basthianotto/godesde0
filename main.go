@@ -1,7 +1,7 @@
 package main
 
 import (
-	"gitbhub.com/basthianotto/godesde0/arreglos_slices"
+	"gitbhub.com/basthianotto/godesde0/mapas"
 )
 
 func main() {
@@ -17,5 +17,6 @@ func main() {
 	//files.LeoArchivo()
 	//funciones.Calculos()
 	//funciones.LlamarClousure()
-	arreglos_slices.MuestroSlice()
+	//arreglos_slices.MuestroSlice()
+	mapas.MostrarMapas()
 }
