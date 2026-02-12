@@ -7,7 +7,7 @@ import (
 	"strconv"
 )
 
-func TablaMultiplicacion() {
+func TablaMultiplicacion() string {
 	scanner := bufio.NewScanner(os.Stdin)
 	fmt.Println("Ingrese número:")
 	var numeroTXT string
@@ -23,11 +23,16 @@ func TablaMultiplicacion() {
 				fmt.Println("Ingrese nuevamente:")
 				continue
 			} else {
+				var texto string
 				for i := 1; i <= 10; i++ {
 					multiplicado := numeroINT * i
-					fmt.Println(numeroTXT + "*" + strconv.Itoa(i) + "=" + strconv.Itoa(multiplicado))
+					texto += fmt.Sprintln(numeroTXT + "*" + strconv.Itoa(i) + "=" + strconv.Itoa(multiplicado))
+					//fmt.Println(numeroTXT + "*" + strconv.Itoa(i) + "=" + strconv.Itoa(multiplicado))
+					//fmt.Println("Ingrese nuevamente:")
+
 				}
-				break
+				fmt.Println(texto)
+				return texto
 			}
 		}
 
