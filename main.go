@@ -1,6 +1,8 @@
 package main
 
-import "gitbhub.com/basthianotto/godesde0/defer_panic"
+import (
+	"gitbhub.com/basthianotto/godesde0/goroutines"
+)
 
 func main() {
 	/*
@@ -24,5 +26,13 @@ func main() {
 	  ejer_interfaces.HumanosRespirando(Julia)
 	*/
 	//defer_panic.VemosDefer()
-	defer_panic.EjemploPanic()
+	//defer_panic.EjemploPanic()
+	canal1 := make(chan bool)
+	go goroutines.MiNombreLentooo("Basthian Duarte", canal1)
+	defer func() {
+		<-canal1
+	}()
+
+	/*var x string
+	fmt.Scanln(&x)*/
 }
