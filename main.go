@@ -1,7 +1,7 @@
 package main
 
 import (
-	"gitbhub.com/basthianotto/godesde0/goroutines"
+	"gitbhub.com/basthianotto/godesde0/middleware"
 )
 
 func main() {
@@ -27,12 +27,15 @@ func main() {
 	*/
 	//defer_panic.VemosDefer()
 	//defer_panic.EjemploPanic()
-	canal1 := make(chan bool)
+	/*canal1 := make(chan bool)
 	go goroutines.MiNombreLentooo("Basthian Duarte", canal1)
 	defer func() {
 		<-canal1
-	}()
+	}()*/
 
 	/*var x string
 	fmt.Scanln(&x)*/
+
+	//webserver.MiWebServer()
+	middleware.MiMiddleware()
 }
